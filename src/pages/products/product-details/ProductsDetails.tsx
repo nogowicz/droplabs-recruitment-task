@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import styles from './product-details.module.scss';
-import { IProduct } from '../Products';
+
 import { useLastVisitedProduct } from '../../../hooks/useLastVisitedProduct';
 
-function ProductsDetails() {
+import { IProduct } from '../../../types/Product';
+
+import styles from './product-details.module.scss';
+
+export default function ProductsDetails() {
   const { id } = useParams();
+  const { updateLastVisitedProductId } = useLastVisitedProduct();
+
   const [product, setProduct] = useState<IProduct | null>(null);
   const [loading, setLoading] = useState(true);
-  const { updateLastVisitedProductId } = useLastVisitedProduct();
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${id}`)
@@ -58,5 +62,3 @@ function ProductsDetails() {
     </div>
   );
 }
-
-export default ProductsDetails;

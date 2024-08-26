@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+
 import { LastVisitedProductContext } from '../contexts/LastVisitedProductContext';
 
 export function useLastVisitedProduct() {

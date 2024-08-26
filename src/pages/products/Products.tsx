@@ -1,20 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import styles from './products.module.scss';
+import { IProduct } from '../../types/Product';
 
-export interface IProduct {
-  id: number;
-  title: string;
-  price: number;
-  category: string;
-  description: string;
-  rating: {
-    rate: number;
-    count: number;
-  };
-  image: string;
-}
+import styles from './products.module.scss';
 
 export default function Products() {
   const [products, setProducts] = useState([]);

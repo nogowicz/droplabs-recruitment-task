@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+
 import { useLastVisitedProduct } from '../../hooks/useLastVisitedProduct';
 
-function Home() {
+export default function Home() {
   const { lastVisitedProductId } = useLastVisitedProduct();
 
   return (
@@ -17,5 +18,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

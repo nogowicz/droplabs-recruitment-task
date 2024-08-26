@@ -1,10 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+
+import { LastVisitedProductProvider } from './contexts/LastVisitedProductContext';
+
+import Navigation from './components/navigation/Navigation';
+
 import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import ProductsDetails from './pages/products/product-details/ProductsDetails';
-import Navigation from './components/navigation/Navigation';
-import { LastVisitedProductProvider } from './contexts/LastVisitedProductContext';
+
+import './App.css';
 
 function App() {
   return (

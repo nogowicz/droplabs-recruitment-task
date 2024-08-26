@@ -1,0 +1,42 @@
+.product-details {
+  padding: 2rem;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  &__price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__category {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+
+  &__rating {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
