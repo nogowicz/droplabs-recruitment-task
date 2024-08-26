@@ -11,7 +11,7 @@ export default function Home() {
       {lastVisitedProductId && (
         <p>
           <Link to={`/products/${lastVisitedProductId}`}>
-            Wróć do przeglądania produktu
+            Return to product browsing
           </Link>
         </p>
       )}
